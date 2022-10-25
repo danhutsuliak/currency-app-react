@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import "./App.css";
+import Converter from "./components/converter/converter.component";
 import Header from "./components/header/header.component";
 import { ICurrencyData } from "./types/currencyData.type";
 import { getCurrency } from "./utils/getCurrency";
@@ -30,6 +31,7 @@ function App() {
   return (
     <>
       <Header currencies={data} />
+      <Converter currencies={data} />
     </>
   );
 }
