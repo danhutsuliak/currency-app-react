@@ -32,6 +32,17 @@ function App() {
     <>
       <Header currencies={data} />
       <Converter currencies={data} />
+      <div className="text-slate-700 text-xs text-center py-6">
+        Зроблено за допомогою{" "}
+        <a
+          href="https://api.privatbank.ua/#p24/exchange"
+          rel="noreferrer"
+          target="_blank"
+          className=" hover:text-slate-600"
+        >
+          Приватбанк API
+        </a>
+      </div>
     </>
   );
 }
